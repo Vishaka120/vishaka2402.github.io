@@ -12,12 +12,13 @@ h1{
 
 .socall-link{
     margin-top: 100px;
-    margin-left: 300px;
+    margin-left: 150px;
 }
 
 .column{
     float: left;
     width:25%;
+   
 
 }
 .row:after{
@@ -36,6 +37,7 @@ p{
     color: black;
     font-size: 20px;
     font-weight: bold;
+    padding-right: 20px;
 }
 a i{
     font-size: 50px;
@@ -46,6 +48,7 @@ a i{
 }*/
 img{
     margin-left: 80%;
+    margin-right: 20px;
 }
 h3 {
     color:rgb(14, 14, 138);
@@ -56,15 +59,20 @@ h3 p{
     justify-content: left;
 }
 .vertical{
-    border-left: 5px solid rgb(11, 11, 122) ;
+    border-left: 3px solid rgb(11, 11, 122) ;
     height: 250px;
+    margin-left: 20px;
+    
 }
-@media screen and (max-width: 1125px) {
+hr{
+    width:0%;
+}
+@media screen and (max-width: 1085px) {
     body{
         width:100%;
         flex-direction: column;
         padding-right: 20%;
-        margin-right: 20px;
+        margin: auto;
     }
    .socall-link{
         width:60%;
@@ -83,6 +91,7 @@ h3 p{
    .info{
        text-align: center;
        margin: auto;
+      align-content: center;
    }
 
 }
@@ -96,21 +105,61 @@ h3 p{
         font-size: 20px;
         float: none;
         margin:auto;
+        padding-left: 1.2rem;
 
     } 
     img{
         margin: auto;
+        padding-right: 1rem;
+        width:100%;
+        
+    }
+    p{
+        margin: auto;
+        padding: 0%;
     }
 
 }
 @media screen and (max-width: 475px){
     .socall-link{
-        margin-left: 20%;
-    }
-    .img{
-        justify-content: center;
         margin:auto;
-
     }
+    
+    h1{
+        padding-left: 0.4rem;
+        margin: auto;
+        font-size: 20px;
+        }
+    .column{
+        text-align: center;
+        margin: auto;
+    }
+    body{
+        width:100%;
+        margin: auto;
+        padding-right: 0.5rem;
+    }
+    .main-logo{
+        margin: auto;
+        padding-left: 15rem;
+        width:90%;
+        padding-right: 0%;
+    }
+    hr{
+        border-color:rgb(11, 11, 122);
+        width:auto;
+        margin: auto;}
+
+    .info{
+        margin: auto;
+        padding-bottom: 3rem;
+        padding-left: 0%;
+    }
+    h3{
+        margin: auto;
+        font-size: 1.2rem;
+    }
+    
+    
 
 }
