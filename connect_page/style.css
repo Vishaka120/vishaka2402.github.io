@@ -67,46 +67,63 @@ h3 p{
 hr{
     width:0%;
 }
+.main-logo{
+    padding-right: 1.5rem;
+    justify-content: right;
+
+}
 @media screen and (max-width: 1085px) {
     body{
         width:100%;
         flex-direction: column;
-        padding-right: 20%;
+        padding-right: 1.2rem;
         margin: auto;
+        
     }
    .socall-link{
-        width:60%;
+        width:100%;
+        padding:0%;
+        margin: auto;
        
    }
    .vertical{
-       height:0%;
+       height:250px;
    }
    .column{
-        width: 50%;
+        width: 33.33%;
         flex-direction: row;
-        justify-content: center;
         font-size: 20px;  
         
    }
    .info{
+       font-size: 85%;
+       width:100%;
        text-align: center;
        margin: auto;
-      align-content: center;
+       align-content: center;
    }
+   .row{
+    flex-direction:column;
+}
+.main-logo{
+    padding-bottom: 1rem;
+
 
 }
-@media screen and (max-width: 544px){
+}
+@media screen and (max-width: 700px){
     .row{
         flex-direction: column;
     }
     .column{
         width: 100%;
+        text-align: center;
         justify-content: center;
         font-size: 20px;
         float: none;
         margin:auto;
         padding-left: 1.2rem;
-
+        
     } 
     img{
         margin: auto;
@@ -118,11 +135,17 @@ hr{
         margin: auto;
         padding: 0%;
     }
+    .vertical{
+        width:0%;
+        height: 0%;
+    }
+    
 
-}
-@media screen and (max-width: 491px){
+
+/*@media screen and (max-width: 600px){*/
     .socall-link{
         margin:auto;
+        padding-left: 30%;
     }
     
     h1{
@@ -130,20 +153,23 @@ hr{
         margin: auto;
         font-size: 20px;
         }
-    .column{
+    /*.column{
         text-align: center;
         margin: auto;
-    }
+    }*/
     body{
         width:100%;
         margin: auto;
         padding-right: 0.5rem;
     }
     .main-logo{
-        margin: auto;
-        padding-left: 15rem;
-        width:90%;
-        padding-right: 0%;
+        /*margin: auto;*/
+        width:100%;
+       
+        text-align: right;
+        justify-content: right;
+        padding-left: 70%;
+        
     }
     hr{
         border-color:rgb(11, 11, 122);
@@ -153,13 +179,26 @@ hr{
     .info{
         margin: auto;
         padding-bottom: 3rem;
-        padding-left: 0%;
+        padding-right:0.8rem;
+        text-align: center;
+        justify-content: center;
     }
     h3{
         margin: auto;
         font-size: 1.2rem;
     }
-    
-    
-
+}
+@media screen and (max-width: 406px){
+    .main-logo{
+       padding-right: 0%;
+       margin:auto;
+       padding-left: 0.3rem;
+       width:50%;
+    }
+    h1{
+        padding: 0%;
+    }
+    .socall-link{
+        padding-left: 0.4rem;
+    }
 }
