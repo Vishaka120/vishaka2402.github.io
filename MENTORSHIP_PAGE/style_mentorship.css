@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(227, 229, 231);
+    background-color:rgb(221, 230, 243);
 }
 .main-header{
     height: 70px;
@@ -11,7 +11,9 @@ body{
     box-shadow: 5px 5px 3px grey;
   }
   .img-tt{
-    margin-left: 75%;
+   margin-right: 20px;
+   width: 200px ;
+   height:70px;
   
   }
   .main{
@@ -28,8 +30,9 @@ h1{
     font-family:monospace;
 }
 img{
-    margin-left: 25%;
-    box-shadow:5px 5px 3px grey;
+    align-items: center;
+    justify-content: center;
+    margin-left: 27%;
     
 }
 h2{
@@ -53,11 +56,13 @@ i{
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+ 
+    text-align: center;
     align-content: center;
     background-color: cornflowerblue;
 }
 .container1{
-    padding: 20px;
+    padding-left: 50px;
    
     margin-bottom: 20px;
 }
@@ -69,11 +74,13 @@ h4{
     text-align: center;
     color: black;
 }
-.card{
+.card1{
     background-color:whitesmoke;
-    box-shadow:5px 5px 3px grey;
     border-radius: 10px;
     
+}
+.column{
+  align-items: center;
 }
 
 
@@ -88,56 +95,13 @@ form{
     border-radius: 10px;
     color:black;
     margin-left:25%;
+    margin-bottom: 20px;
+    padding:20px;
 }
 input,select,textarea{
     box-shadow: 3px 3px 2px grey;
 }
-.Testimonials{
-  background-color: cadetblue;
-}
-.test_container {
-    width: 90%;
-    border: 2px solid #ccc;
-    background-color: rgb(202, 241, 248);
-    margin:20px;
-    border-radius: 5px;
-    padding: 16px;
-    margin: 16px 0;
-    margin-left: 40px;
-    box-shadow: 5px 5px 3px grey;
-  }
-  .test_header{
-    color:  rgb(53, 37, 192);
-    margin-left: 20px;
-    margin-top: 20px;
-    font-size: 35px;
-  }
-  .test_desp{
-    margin-left: 20px;
-    font-size: 15px;
-    color: black;
-  }
-  
-  /* Clear floats after containers */
-  .test_container::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
-  .test_container img {
-    float: left;
-    margin-right: 20px;
-    border-radius: 50%;
-  }
-  
-  /* Increase the font-size of a span element */
-  .test_container span {
-    font-size: 20px;
-    margin-right: 15px;
-  }
-  
+
   footer{
     background-color: black;
     color: white;
@@ -162,9 +126,104 @@ input,select,textarea{
     
 
   }
+
+ 
+  .container2{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(13, 71, 110);
+    font-family: 'Open Sans'
+}
+
+#demo {
+    background: linear-gradient(112deg, #ffffff 50%, antiquewhite 50%);
+    max-width: 900px;
+    margin: auto
+}
+
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 5rem 8rem;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem
+}
+
+@media(max-width:767px) {
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        color: rgba(78, 77, 77, 0.856);
+        text-align: center;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem;
+        
+    }
+}
+
+.carousel-caption img {
+    width: 6rem;
+    border-radius: 5rem;
+    margin-top: 2rem;
+}
+
+@media(max-width:767px) {
+    .carousel-caption img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem;
+    }
+}
+
+#image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media(max-width:767px) {
+    #image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+}
+
+i {
+    background-color: rgb(223, 56, 89);
+    padding: 1.4rem
+}
+
+@media(max-width:767px) {
+    i {
+        padding: 0.8rem
+    }
+}
+
+.carousel-control-prev {
+    justify-content: flex-start
+}
+
+.carousel-control-next {
+    justify-content: flex-end
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset
+}
   
   /* Add media queries for responsiveness. This will center both the text and the image inside the container */
-  @media (max-width: 500px) {
+ /* @media (max-width: 500px) {
     .test_container {
       text-align: center;
       margin:auto;
@@ -175,17 +234,21 @@ input,select,textarea{
       float: none;
       display: block;
     }
-  }
-  @media (max-width: 769px) {
+  }*/
+  @media (max-width: 800px) {
     body{
       width:100%;
     }
-    .img-tt{
-      margin:auto;
       
-    }
+    
     .main-header{
       margin:auto;
+      padding:auto;
+    }
+    .main{
+      width:100%;
+      margin: 0%;
+      padding: 0%;
     }
 
     h2{
@@ -195,10 +258,14 @@ input,select,textarea{
       text-align: center;
       align-content: center;
       width: 50%;
+      padding-right: 10px;
       
     }
     h1{
       margin:auto;
+      text-align: center;
+      padding-left: 15px;
+      
 
     }
     .row row-cols-1 row-cols-md-2 g-4{
@@ -210,8 +277,28 @@ input,select,textarea{
     form{
       width:70%;
       margin:auto;
+      padding:auto;
     }
-   
+    .container1{
+      margin:auto;
+      padding-left: 0%;
+    }
+    .img-tt{
+      
+      margin:auto;
+      padding-left:auto ;
+    }
+    .card1{
+      margin: auto;
+      padding-left: auto;
+      padding-right: auto;
+    }
+    .row row-cols-1 row-cols-md-2 g-4{
+      padding-bottom: 20px;
+    }
+    h3{
+      margin-top: 10px;
+    }
   }
  
 
