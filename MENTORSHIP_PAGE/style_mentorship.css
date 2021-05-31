@@ -138,6 +138,12 @@ h4{
   padding-top: 40px;
  
 }
+@media(max-width:453px){
+  .programs .card .apply-btn{
+    width:70%;
+    font-size: small;
+  }
+}
 
 
 .apply-btn .btn{
