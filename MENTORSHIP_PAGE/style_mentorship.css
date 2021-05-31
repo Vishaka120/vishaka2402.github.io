@@ -83,6 +83,7 @@ h4{
 .description{
     text-align: center;
     color: black;
+    
 }
 
 
@@ -118,21 +119,31 @@ h4{
 }
 
 .programs .card .apply-btn{
-  margin-bottom: -8px;
+  padding-bottom: 40px;
   margin-left: -2%;
-  width: 60%;
+  width: 45%;
+  height:49px;
   border-radius: 20px;
+  margin-bottom: 10px;
+
+  text-align: center;
+  justify-content: center;
   /*border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;*/
 }
 
 .card .apply-btn{
   background:rgb(36, 98, 230);
+  
+  padding-top: 40px;
+ 
 }
+
 
 .apply-btn .btn{
   outline: none !important;
   border: none !important;
+  
 }
 
 a:hover{
@@ -478,8 +489,8 @@ hr{
 
 }
 .icon-logo{
-  width:50px;
-  max-height:50px;
+  width:70px;
+  max-height:70px;
   padding-left: 0%;
   
 }
