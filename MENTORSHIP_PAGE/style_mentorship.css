@@ -140,7 +140,7 @@ h4{
 }
 @media(max-width:453px){
   .programs .card .apply-btn{
-    width:70%;
+    width:85%;
     font-size: small;
   }
 }
